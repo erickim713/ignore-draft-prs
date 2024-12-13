@@ -1,0 +1,16 @@
+{
+  "name": "Hide Draft Pull Requests on GitHub",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Hides draft PRs in the GitHub pull requests list.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*"],
+      "js": ["main.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
+
